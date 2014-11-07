@@ -1,0 +1,10 @@
+application: school-tools
+version: 1-0-a-1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /quizzes/best-worst/
+  static_files: pages/best-worst.html
+  upload: pages/best-worst.html

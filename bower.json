@@ -1,0 +1,17 @@
+{
+  "name": "SchoolTools",
+  "homepage": "https://clocworc.com/school/",
+  "authors": [
+    "Alexander Otavka <zotavka@gmail.com>"
+  ],
+  "main": "app.yaml",
+  "license": "GNU GPL v2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "local_components",
+    "test",
+    "tests"
+  ]
+}
