@@ -5,6 +5,19 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /quizzes/best-worst/
-  static_files: pages/best-worst.html
-  upload: pages/best-worst.html
+# Pages
+- url: /quizzes/sort
+  static_files: pages/quizzes-sort.html
+  upload: pages/quizzes-sort.html
+
+# Component resources
+- url: /res/bower
+  static_dir: bower_components
+- url: /res/local
+  static_dir: local_components
+
+# CSS and JS resources
+- url: /res/css
+  static_dir: css
+- url: /res/js
+  static_dir: js

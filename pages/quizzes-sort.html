@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Best and Worst Quiz Scores</title>
+
+        <link rel='stylesheet' type='text/css' href='/res/css/main.css'>
+
+        <script src='/res/bower/platform/platform.js'></script>
+        <script src='/res/bower/polymer-gestures/polymer-gestures.js'></script>
+        <link rel='import'
+              href='/res/bower/core-header-panel/core-header-panel.html'>
+        <link rel='import'
+              href='/res/bower/core-toolbar/core-toolbar.html'>
+
+        <link rel='import'
+              href='/res/local/quiz-score-item/quiz-score-item.html'>
+    </head>
+
+    <body fullbleed layout vertical unresolved>
+        <core-header-panel flex>
+            <core-toolbar>
+                <div class='header'>Sort Quiz Scores</div>
+            </core-toolbar>
+            <div>
+                <quiz-score-item quizName='Quiz 1'></quiz-score-item>
+                <quiz-score-item quizName='Quiz 2' newScore id='foo'></quiz-score-item>
+                <quiz-score-item quizName='Quiz 3' newScore></quiz-score-item>
+            </div>
+        </core-header-panel>
+
+        <script>
+            var foo = document.querySelector('#foo');
+            PolymerGestures.addEventListener(foo, 'tap', function() {
+                console.log('debug foo tapped');
+                foo.showInfo();
+            });
+        </script>
+    </body>
+</html>

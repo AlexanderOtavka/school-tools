@@ -1,0 +1,15 @@
+.container {
+  display: block;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2px;
+}
+paper-input {
+  display: inline-block !important;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+}
+paper-input.score {
+  width: 50px;
+}

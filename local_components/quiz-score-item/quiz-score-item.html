@@ -1,0 +1,27 @@
+<link rel="import" href="/res/bower/polymer/polymer.html">
+<link rel="import" href="/res/bower/paper-input/paper-input.html">
+<link rel="import" href="/res/bower/paper-shadow/paper-shadow.html">
+<link rel="import" href="/res/bower/paper-button/paper-button.html">
+
+<polymer-element name="quiz-score-item"
+                 attributes="quizName score total newScore">
+    <template>
+        <link rel="stylesheet" href="quiz-score-item.css">
+        <paper-button id="newContainer" class="container" raised>
+            <div>
+                New quiz
+            </div>
+        </paper-button>
+        <div id="info" class="container">
+            <paper-shadow z="1"></paper-shadow>
+            <paper-input id="quiz-name" value="{{quizName}}"></paper-input>
+            Score
+            <paper-input id="quiz-score"
+                         type="number" class="score"></paper-input>
+            out of
+            <paper-input id="quiz-total"
+                         type="number" class="score"></paper-input>
+        </div>
+    </template>
+    <script src="quiz-score-item.js"></script>
+</polymer-element>
